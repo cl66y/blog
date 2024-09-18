@@ -15,6 +15,21 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+ARTICLE_URL = 'posts/{category}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{category}/{slug}/index.html'
+
+PAGE_URL = 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'
+
+AUTHOR_URL = 'author/{slug}/'
+AUTHOR_SAVE_AS = 'author/{slug}/index.html'
+
+CATEGORY_URL = 'category/{slug}/'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+
+TAG_URL = 'tag/{slug}/'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
+
 # Blogroll
 LINKS = (
     ("Pelican", "https://getpelican.com/"),
@@ -33,3 +48,11 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+MD_INCLUDE_BASE_PATH = "sourcecode"
+# MATH_JAX = {'color':'black','align':'left'}
+
+STATIC_PATHS = [
+    'images',
+    'extra',  # this
+]
